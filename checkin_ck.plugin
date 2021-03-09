@@ -3,7 +3,7 @@ hostname = m.client.10010.com,zhiyou.smzdm.com,c.tieba.baidu.com,api.didialift.c
 
 [Script]
 # 娃哈哈
-http-request ^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene script-path=https://raw.githubusercontent.com/siusiu7/loon/main/task/whh.js,requires-body=true,timeout=60,tag=娃哈哈
+^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene url script-request-header https://raw.githubusercontent.com/siusiu7/loon/main/task/whh.js
 
 # 中国联通
 http-request ^https?:\/\/m\.client\.10010\.com\/dailylottery\/static\/(integral|doubleball)\/firstpage requires-body=true,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.js,tag=联通_获取cookie
